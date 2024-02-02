@@ -6,4 +6,4 @@ RUN npm install
 
 
 
-CMD ["node", "service.js"]
+CMD ["node", "app.js"]
