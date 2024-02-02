@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-cicd 
+  name: devsecops 
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: node-cicd  
+      app: devsecops  
   template:
     metadata:
       labels:
-        app: node-cicd
+        app: devsecops
     spec:
       containers:
-      - name: node-cicd
-        image: ahmetkasap/node-cicd:20
+      - name: devsecops
+        image: fecredal40/devsecops:13
         ports:
         - containerPort: 5000
